@@ -63,8 +63,8 @@ module.exports = function (grunt) {
             opengraph: {
                 options: {
                     sizes: [{
-                        width: 484,
-                        height: 252,
+                        width: 470,
+                        height: 246,
                         aspectRatio: true,
                     }]
                 },

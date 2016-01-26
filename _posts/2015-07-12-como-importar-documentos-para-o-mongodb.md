@@ -8,7 +8,7 @@ category: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-07-12-450x250.png"
   feature: "media/compressed/posts/thumbs/2015-07-12.png"
-  opengraph: "media/compressed/opengraph/2015-07-12-484x252.png"
+  opengraph: "media/compressed/opengraph/2015-07-12-470x246.png"
 ---
 
 Hoje veremos como é simples importar documentos para o MongoDB. Para isto, encontrei neste [GitHub](https://github.com/tmcnab/northwind-mongo), um conjunto de arquivos com dados extraídos do famoso database Northwind da Microsoft.
