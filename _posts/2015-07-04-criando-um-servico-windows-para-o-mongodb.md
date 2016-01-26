@@ -2,7 +2,7 @@
 author: liverton
 comments: true
 layout: article
-title: Criando um Serviço Windows para o MongoDB
+title: Criando um Serviço Windows para o mongoDB
 tags: [MongoDB, Serviço, Windows]
 category: [MongoDB]
 image:

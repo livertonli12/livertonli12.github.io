@@ -56,7 +56,7 @@ data:
   navigation:
     - link:
       title: Feed
-      url: atom.xml
+      url: /atom.xml
     - link:
       title: Sobre
       url: /about
