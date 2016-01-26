@@ -7,7 +7,6 @@ tags: [Consultas, MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-08-17-450x250.png"
   feature: "media/compressed/posts/thumbs/2015-08-17.png"
-  opengraph: "media/compressed/opengraph/2015-08-17-600x600.png"
 ---
 
 Neste artigo, utilizaremos os métodos de Sort e Limit do MongoDB.
