@@ -129,4 +129,4 @@ Dados para collection Restaurants: https://raw.githubusercontent.com/mongodb/doc
 
 [dados-import]: https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/dataset.json
 
-[link-post-importar-documentos]: /blog/como-importar-documentos-para-o-mongodb/
+[link-post-importar-documentos]: /mongodb/como-importar-documentos-para-o-mongodb/

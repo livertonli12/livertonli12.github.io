@@ -11,13 +11,13 @@ image:
   opengraph: "media/compressed/opengraph/2015-07-21-470x246.png"
 ---
 
-Hoje veremos como efetuar consultas com o MongoDB. Para isto, utilizaremos a database Northwind importada no artigo anterior onde aprendemos [como importar documentos para o MongoDB]({{ site.baseurl | replace: '//', '/' }}/como-importar-documentos-para-o-mongodb).
+Hoje veremos como efetuar consultas com o MongoDB. Para isto, utilizaremos a database Northwind importada no artigo anterior onde aprendemos [como importar documentos para o MongoDB]({{ site.baseurl | replace: '//', '/' }}/mongodb/como-importar-documentos-para-o-mongodb).
 
 Para facilitar o entendimento de todas as operações executadas, utilizaremos uma ferramenta open source de gerenciamento chamada [Robomongo](http://robomongo.org/), disponível para download nas plataformas Windows, Linux e Mac e constantemente atualizada pela comunidade.
 
 ## **Vamos começar ?**
 
-Com o Robomongo instalado, precisaremos configurar a nossa conexão local, neste ponto, seria interessante ter o [MongoDB como um serviço do Windows]({{ site.baseurl | replace: '//', '/'}}/criando-um-servico-windows-para-o-mongodb/), ou, iniciá-lo em uma janela do prompt de comando através do comando mongod.
+Com o Robomongo instalado, precisaremos configurar a nossa conexão local, neste ponto, seria interessante ter o [MongoDB como um serviço do Windows]({{ site.baseurl | replace: '//', '/'}}/mongodb/criando-um-servico-windows-para-o-mongodb/), ou, iniciá-lo em uma janela do prompt de comando através do comando mongod.
 
 Para configurar a conexão local, clicamos no botão de conexões do Robomongo:
 

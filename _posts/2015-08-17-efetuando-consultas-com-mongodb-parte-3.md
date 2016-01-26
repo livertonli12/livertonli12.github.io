@@ -16,7 +16,7 @@ Neste artigo, utilizaremos os métodos de Sort e Limit do MongoDB.
 
 [Anteriormente][link-post-primeiro-artigo], tivemos a oportunidade de entender como efetuar consultas utilizando o comando **find** para retornar informações de uma série de documentos e vimos também, o conceito de **projection** onde podemos limitar as informações à serem exibidas de cada documento resultante da busca.
 
-Em seguida, no [segundo artigo][link-post-segundo-artigo], exploramos mais possibilidades de consulta vendo, queries com **dot notation, seletores de query e operadores lógicos**. O mais importante é que esta base nos possibilita utilizar os comandos aprendidos na construção de quaisquer outros comandos do MongoDB.
+[Em seguida][link-post-segundo-artigo], exploramos mais possibilidades de consulta vendo, queries com **dot notation, seletores de query e operadores lógicos**. O mais importante é que esta base nos possibilita utilizar os comandos aprendidos na construção de quaisquer outros comandos do MongoDB.
 
 ## **Mais possibilidades**
 
@@ -59,5 +59,5 @@ Documentação do comando **limit**: https://docs.mongodb.org/v3.0/reference/met
 
 Documentação do comando **findOne**: http://docs.mongodb.org/master/reference/method/db.collection.findOne/
 
-[link-post-primeiro-artigo]:/blog/efetuando-consultas-com-mongodb-parte-1/
-[link-post-segundo-artigo]:/blog/efetuando-consultas-com-mongodb-parte-2/
+[link-post-primeiro-artigo]:/mongodb/primeiras-consultas-com-mongodb/
+[link-post-segundo-artigo]:/mongodb/seletores-query-operadores-logicos-mongodb/
