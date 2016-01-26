@@ -8,6 +8,7 @@ category: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-07-04-450x250.png"
   feature: "media/compressed/posts/thumbs/2015-07-04.png"
+  opengraph: "media/compressed/opengraph/2015-07-04-600x315.png"
 ---
 
 Podemos economizar bastante tempo ao rodar o MongoDB localmente, se tivermos um serviço do Windows dedicado exclusivamente à ele. Neste post, veremos como criar este serviço de forma simples.
