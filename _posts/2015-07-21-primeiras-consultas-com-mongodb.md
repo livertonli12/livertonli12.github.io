@@ -8,7 +8,7 @@ category: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-07-21-450x250.png"
   feature: "media/compressed/posts/thumbs/2015-07-21.png"
-  opengraph: "media/compressed/opengraph/2015-07-21-600x315.png"
+  opengraph: "media/compressed/opengraph/2015-07-21-600x600.png"
 ---
 
 Hoje veremos como efetuar consultas com o MongoDB. Para isto, utilizaremos a database Northwind importada no artigo anterior onde aprendemos [como importar documentos para o MongoDB]({{ site.baseurl | replace: '//', '/' }}/como-importar-documentos-para-o-mongodb).
