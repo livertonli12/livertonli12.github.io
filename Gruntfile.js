@@ -59,22 +59,6 @@ module.exports = function (grunt) {
                     cwd: '',
                     dest: 'media/compressed/thumbs/'
                 }]
-            },
-            opengraph: {
-                options: {
-                    sizes: [{
-                        width: 470,
-                        height: 246,
-                        aspectRatio: true,
-                    }]
-                },
-                files: [{
-                    expand: true,
-                    flatten: true,
-                    src: ['media/compressed/posts/opengraph/*.{jpg,gif,png}'],
-                    cwd: '',
-                    dest: 'media/compressed/opengraph/'
-                }]
             }
         },
 
