@@ -9,7 +9,6 @@ category: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-08-01-450x250.jpg"
   feature: "media/compressed/posts/thumbs/2015-08-01.jpg"
-  opengraph: "media/compressed/opengraph/2015-08-01-600x315.jpg"
 ---
 
 Continuaremos a série de artigos sobre mongoDB com a exploração de seletores de query e operadores lógicos. Para isto, utilizaremos [estes dados][dados-import] que encontrei no Github, que podem ser importados utilizando o comando **mongoimport**. Você pode relembrar como utilizá-lo no link onde explico [como importar documentos utilizando o MongoDB][link-post-importar-documentos].
