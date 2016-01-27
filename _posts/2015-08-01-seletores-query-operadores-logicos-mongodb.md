@@ -7,7 +7,7 @@ featimg: 2.jpg
 tags: [MongoDB]
 category: [MongoDB]
 image:
-  teaser: "media/compressed/thumbs/2015-08-01-450x250.png"
+  teaser: "media/compressed/thumbs/2015-08-01-450x250.jpg"
   feature: "media/compressed/posts/thumbs/2015-08-01.jpg"
 ---
 

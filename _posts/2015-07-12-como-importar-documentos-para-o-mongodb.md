@@ -6,7 +6,7 @@ title: Como Importar Documentos para o mongoDB
 tags: [MongoDB]
 category: [MongoDB]
 image:
-  teaser: "media/compressed/thumbs/2015-07-12-450x250.png"
+  teaser: "media/compressed/thumbs/2015-07-12-450x250.jpg"
   feature: "media/compressed/posts/thumbs/2015-07-12.jpg"
 ---
 

@@ -5,7 +5,7 @@ layout: article
 title: Ordenando e limitando documentos com mongoDB
 tags: [Consultas, MongoDB]
 image:
-  teaser: "media/compressed/thumbs/2015-08-17-450x250.png"
+  teaser: "media/compressed/thumbs/2015-08-17-450x250.jpg"
   feature: "media/compressed/posts/thumbs/2015-08-17.jpg"
 ---
 
