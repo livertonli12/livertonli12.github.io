@@ -5,7 +5,6 @@ layout: article
 title: Seletores de Query e Operadores Lógicos com mongoDB
 featimg: 2.jpg
 tags: [MongoDB]
-category: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-08-01-450x250.jpg"
   feature: "media/compressed/posts/thumbs/2015-08-01.jpg"

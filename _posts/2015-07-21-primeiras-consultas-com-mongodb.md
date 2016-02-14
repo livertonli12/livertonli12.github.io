@@ -4,7 +4,6 @@ comments: true
 layout: article
 title: Primeiras consultas com mongoDB
 tags: [Consultas, MongoDB, Robomongo]
-category: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-07-21-450x250.jpg"
   feature: "media/compressed/posts/thumbs/2015-07-21.jpg"

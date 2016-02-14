@@ -4,7 +4,6 @@ comments: true
 layout: article
 title: Criando um Serviço Windows para o mongoDB
 tags: [MongoDB, Serviço, Windows]
-category: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-07-04-450x250.png"
   feature: "media/compressed/posts/thumbs/2015-07-04.png"
