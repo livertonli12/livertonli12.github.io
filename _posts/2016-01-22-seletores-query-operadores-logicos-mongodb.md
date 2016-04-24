@@ -2,12 +2,11 @@
 author: liverton
 comments: true
 layout: article
-title: Seletores de Query e Operadores Lógicos com mongoDB
+title: Seletores de Query e Operadores Lógicos com MongoDB
 featimg: 2.jpg
 tags: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-08-01-450x250.jpg"
-  feature: "media/compressed/posts/thumbs/2015-08-01.jpg"
 ---
 
 Continuaremos a série de artigos sobre mongoDB com a exploração de seletores de query e operadores lógicos. Para isto, utilizaremos [estes dados][dados-import] que encontrei no Github, que podem ser importados utilizando o comando **mongoimport**. Você pode relembrar como utilizá-lo no link onde explico [como importar documentos utilizando o MongoDB][link-post-importar-documentos].
@@ -121,7 +120,7 @@ Nosso próximo artigo será o último dessa série de buscas mais simples com o 
 
 Até a próxima.
 
-## **Referências:**
+#### **Referências:**
 
 Dados para collection Restaurants: https://raw.githubusercontent.com/mongodb/docs-assets/primer-dataset/dataset.json
 

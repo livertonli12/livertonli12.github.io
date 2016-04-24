@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         imagemin: {
             png: {
                 options: {
-                    optimizationLevel: 7
+                    optimizationLevel: 5
                 },
                 files: [
                     {
@@ -47,8 +47,8 @@ module.exports = function (grunt) {
             thumbs: {
                 options: {
                     sizes: [{
-                        width: 450,
-                        height: 250,
+                        width: 470,
+                        height: 246,
                         aspectRatio: true,
                     }]
                 },

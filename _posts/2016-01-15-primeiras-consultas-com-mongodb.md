@@ -2,11 +2,10 @@
 author: liverton
 comments: true
 layout: article
-title: Primeiras consultas com mongoDB
+title: Primeiras consultas com MongoDB
 tags: [Consultas, MongoDB, Robomongo]
 image:
   teaser: "media/compressed/thumbs/2015-07-21-450x250.jpg"
-  feature: "media/compressed/posts/thumbs/2015-07-21.jpg"
   opengraph: "media/compressed/opengraph/mongodb-200x200.jpg"
 ---
 
@@ -14,7 +13,7 @@ Hoje veremos como efetuar consultas com o MongoDB. Para isto, utilizaremos a dat
 
 Para facilitar o entendimento de todas as operações executadas, utilizaremos uma ferramenta open source de gerenciamento chamada [Robomongo](http://robomongo.org/), disponível para download nas plataformas Windows, Linux e Mac e constantemente atualizada pela comunidade.
 
-## **Vamos começar ?**
+#### **Vamos começar ?**
 
 Com o Robomongo instalado, precisaremos configurar a nossa conexão local, neste ponto, seria interessante ter o [MongoDB como um serviço do Windows]({{ site.baseurl | replace: '//', '/'}}/mongodb/criando-um-servico-windows-para-o-mongodb/), ou, iniciá-lo em uma janela do prompt de comando através do comando mongod.
 
@@ -84,7 +83,7 @@ No próximo artigo, veremos mais possibilidades de consulta utilizando o MongoDB
 
 Até a próxima :)
 
-## **Referências:**
+#### **Referências:**
 
 Site oficial do Robomongo: http://robomongo.org/
 

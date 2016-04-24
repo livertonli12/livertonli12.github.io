@@ -2,22 +2,21 @@
 author: liverton
 comments: true
 layout: article
-title: Ordenando e limitando documentos com mongoDB
+title: Ordenando e limitando documentos com MongoDB
 tags: [Consultas, MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-08-17-450x250.jpg"
-  feature: "media/compressed/posts/thumbs/2015-08-17.jpg"
 ---
 
 Neste artigo, utilizaremos os métodos de Sort e Limit do MongoDB.
 
-## **Relembrando** **…**
+#### **Relembrando** **…**
 
 [Anteriormente][link-post-primeiro-artigo], tivemos a oportunidade de entender como efetuar consultas utilizando o comando **find** para retornar informações de uma série de documentos e vimos também, o conceito de **projection** onde podemos limitar as informações à serem exibidas de cada documento resultante da busca.
 
 [Em seguida][link-post-segundo-artigo], exploramos mais possibilidades de consulta vendo, queries com **dot notation, seletores de query e operadores lógicos**. O mais importante é que esta base nos possibilita utilizar os comandos aprendidos na construção de quaisquer outros comandos do MongoDB.
 
-## **Mais possibilidades**
+#### **Mais possibilidades**
 
 Ainda utilizando a database do artigo anterior, imaginemos que fosse necessário encontrar todos os restaurantes de cozinha irlandesa, organizados por vila, como faríamos ?
 
@@ -50,7 +49,7 @@ O próximo passo é treinar bastante todos os comandos aprendidos e esperar pelo
 
 Até a próxima.
 
-## **Referências:**
+#### **Referências:**
 
 Documentação do comando **sort**: http://docs.mongodb.org/v2.6/reference/method/cursor.sort/
 

@@ -2,11 +2,10 @@
 author: liverton
 comments: true
 layout: article
-title: Criando um Serviço Windows para o mongoDB
+title: Criando um Serviço Windows para o MongoDB
 tags: [MongoDB, Serviço, Windows]
 image:
-  teaser: "media/compressed/thumbs/2015-07-04-450x250.png"
-  feature: "media/compressed/posts/thumbs/2015-07-04.png"
+  teaser: "media/compressed/thumbs/2015-07-04-470x246.jpg"
 ---
 
 Podemos economizar bastante tempo ao rodar o MongoDB localmente, se tivermos um serviço do Windows dedicado exclusivamente à ele. Neste post, veremos como criar este serviço de forma simples.
@@ -30,6 +29,6 @@ Parar o serviço: **net stop MongoDB**
 Remover o serviço: **sc.exe delete MongoDB**
 Obrigado e até a próxima.
 
-## **Referência:**
+#### **Referência:**
 
 http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/

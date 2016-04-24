@@ -2,11 +2,10 @@
 author: liverton
 comments: true
 layout: article
-title: Como Importar Documentos para o mongoDB
+title: Como Importar Documentos para o MongoDB
 tags: [MongoDB]
 image:
   teaser: "media/compressed/thumbs/2015-07-12-450x250.jpg"
-  feature: "media/compressed/posts/thumbs/2015-07-12.jpg"
 ---
 
 Hoje veremos como é simples importar documentos para o MongoDB. Para isto, encontrei neste [GitHub](https://github.com/tmcnab/northwind-mongo), um conjunto de arquivos com dados extraídos do famoso database Northwind da Microsoft.
@@ -32,7 +31,7 @@ Caso a importação ocorra com sucesso, teremos como mensagem final, a quantidad
 
 Espero que as próximas importações tornem-se mais fáceis à todos.
 
-## **Referências:**
+#### **Referências:**
 
 https://github.com/tmcnab/northwind-mongo
 
