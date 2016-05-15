@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         imagemin: {
             png: {
                 options: {
-                    optimizationLevel: 5
+                    optimizationLevel: 2
                 },
                 files: [
                     {
@@ -128,7 +128,7 @@ module.exports = function (grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve  --no-watch"
+                command: "jekyll serve --watch"
             },
             jekyllBuild: {
                 command: "jekyll build"
