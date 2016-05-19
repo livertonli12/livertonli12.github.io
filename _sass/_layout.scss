@@ -233,7 +233,7 @@
   background-attachment: fixed;
   text-align: center;
   color: $white;
-  background: url('/media/compressed/banner.jpg');
+  background: url('/media/compressed/banner.jpg') 20% 50%;
   @include media($large) {
     background-size: cover;
   }
