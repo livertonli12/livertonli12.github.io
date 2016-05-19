@@ -18,6 +18,9 @@
 		@include outer-container;
 	}
 }
+.page-lead {
+  background: url('/media/compressed/banner.jpg');
+}
 .site-title {
 	@include row;
 	@include media($large) {
