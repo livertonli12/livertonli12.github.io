@@ -102,7 +102,7 @@ module.exports = function (grunt) {
                 tasks: ["copy:js"]
             },
             css: {
-                files: ["sass/{,*/}{,*/}{,*/}*.scss"],
+                files: ["_sass/{,*/}{,*/}{,*/}*.scss"],
                 tasks: ["copy:css"]
             },
             images: {
@@ -128,7 +128,7 @@ module.exports = function (grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve --no-watch"
+                command: "jekyll serve --watch"
             },
             jekyllBuild: {
                 command: "jekyll build"

@@ -23,7 +23,7 @@
   @include media($large) {
     @include span-columns(4);
   }
-  padding: (.17 * $masthead-height) 0; // fourth the height to center vertically
+  padding: (.25 * $masthead-height) 0; // fourth the height to center vertically
   height: $masthead-height;
   text-decoration: none;
   color: $black;
@@ -232,15 +232,16 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   text-align: center;
+  height: 7 * $masthead-height;
+  background-image:url('/media/compressed/banner2.jpg');
   color: $white;
-  background: url('/media/compressed/banner.jpg') 20% 50%;
   @include media($large) {
     background-size: cover;
   }
 }
 .page-lead-content {
-  text-shadow: 3px 3px black;
   padding: 1em;
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
   @include media($medium) {
     padding: 2em;
   }
