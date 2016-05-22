@@ -238,6 +238,11 @@
     height: 3.9 * $masthead-height;
     background-image:url('/media/compressed/banner2.jpg');
   }
+  @include media($small) {
+    background-size: cover;
+    height: 5.9 * $masthead-height;
+    background-image:url('/media/compressed/banner2.jpg');
+  }
   @include media($medium) {
     background-size: cover;
     height: 5.9 * $masthead-height;
@@ -262,6 +267,10 @@
   }
   h1 {
     @include font-size(48);
+    @include media($small) {
+      @include font-size(60);
+      margin-top: 1.3 * $masthead-height;
+    }
     @include media($medium) {
       @include font-size(60);
     }
