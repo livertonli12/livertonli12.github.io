@@ -9,8 +9,8 @@ layout: default
 			<div class="page-image">
 				<img src="{{ site.url }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
 				{% if page.image.credit %}{% include image-credit.html %}{% endif %}
-			</div><!-- /.page-image -->
-		</div><!-- /.page-feature -->
+			</div>
+		</div>
 		{% endif %}
 		{% include breadcrumbs.html %}
 		<div class="page-title">
@@ -23,12 +23,12 @@ layout: default
 				<footer class="page-footer">
 					{% if page.share != false %}{% include share-this.html %}{% endif %}
 					{% include page-meta.html %}
-				</footer><!-- /.footer -->
+				</footer>
 				<aside>
 					{% if page.comments == true %}{% include comments.html %}{% endif %}
 				</aside>
-			</div><!-- /.content -->
-		</div><!-- /.inner-wrap -->
-		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div><!-- /.ads -->{% endif %}
-	</article><!-- /.wrap -->
-</div><!-- /#main -->
+			</div>
+		</div>
+		{% if page.ads == true %}<div class="ads">{% include advertising.html %}</div>{% endif %}
+	</article>
+</div>

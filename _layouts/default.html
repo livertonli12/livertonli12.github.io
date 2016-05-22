@@ -32,6 +32,9 @@
   <body id="js-body">
     {% include browser-upgrade.html %}
     {% include header.html %}
+    {% if page.banner %}
+      {% include banner.html %}
+    {% endif %}
     <div id="page-wrapper">
       {{ content }}
       {% include footer.html %}
