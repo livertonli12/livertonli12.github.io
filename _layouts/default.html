@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>{{ site.title }}{% if page.title %} • {{ page.title }}{% endif %}</title>
-    {% if page.excerpt %}<meta name="description" content="{{ page.excerpt | strip_html }}">{% endif %}
-    {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+    <meta name="description" content="Desenvolvimento web e mobile com criatividade">
+    <meta name="keywords" content="Desenvolvimento de Software, Desenvolvimento web, Desenvolvimento mobile, Criatividade">
     {% if page.author %}
       {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
     {% endif %}
@@ -50,7 +50,7 @@
 
     <script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
     <script src="{{ site.url }}/js/main.js"></script>
-
+    {% include analytics.html %}
   </body>
 
 </html>
