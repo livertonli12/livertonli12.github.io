@@ -7,7 +7,7 @@ module.exports = function (grunt) {
         imagemin: {
             png: {
                 options: {
-                    optimizationLevel: 2
+                    optimizationLevel: 7
                 },
                 files: [
                     {
