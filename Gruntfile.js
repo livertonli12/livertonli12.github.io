@@ -137,7 +137,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["newer:imagemin", "responsive_images", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("build", ["imagemin", "responsive_images", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };
