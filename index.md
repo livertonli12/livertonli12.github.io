@@ -2,6 +2,7 @@
 layout: archive
 permalink: /
 title: "Últimos Posts"
+banner: yes
 ---
 
 <div class="tiles">
