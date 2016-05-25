@@ -15,6 +15,28 @@ module.exports = function (grunt) {
           }
         },
 
+        image: {
+          dynamic: {
+            options: {
+              pngquant: true,
+              optipng: false,
+              zopflipng: true,
+              advpng: true,
+              jpegRecompress: false,
+              jpegoptim: true,
+              mozjpeg: true,
+              gifsicle: true,
+              svgo: true
+            },
+            files: [{
+              expand: true,
+              cwd: './images',
+              src: ['**/*.{png,jpg,gif,svg}'],
+              dest: 'media/compressed/'
+            }]
+          }
+        },
+
         imagemin: {
             png: {
                 options: {
@@ -131,7 +153,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["newer:tinyimg", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["image", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("build", ["imagemin", "responsive_images", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };
