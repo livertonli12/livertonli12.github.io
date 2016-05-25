@@ -5,7 +5,7 @@ layout: article
 title: Criando um Serviço Windows para o MongoDB
 tags: [MongoDB, Serviço, Windows]
 image:
-  teaser: "media/compressed/thumbs/2015-07-04-470x246.jpg"
+  teaser: "media/compressed/posts/thumbs/2015-07-04.jpg"
 ---
 
 Podemos economizar bastante tempo ao rodar o MongoDB localmente, se tivermos um serviço do Windows dedicado exclusivamente à ele. Neste post, veremos como criar este serviço de forma simples.
