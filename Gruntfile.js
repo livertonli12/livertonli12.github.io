@@ -25,7 +25,7 @@ module.exports = function (grunt) {
             },
             jpg: {
                 options: {
-                    progressive: true
+                    optimizationLevel: 7
                 },
                 files: [
                     {
