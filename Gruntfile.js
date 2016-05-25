@@ -7,7 +7,8 @@ module.exports = function (grunt) {
         imagemin: {
             png: {
                 options: {
-                    optimizationLevel: 7
+                    optimizationLevel: 7,
+                    progressive: true
                 },
                 files: [
                     {
@@ -25,7 +26,8 @@ module.exports = function (grunt) {
             },
             jpg: {
                 options: {
-                    optimizationLevel: 7
+                    optimizationLevel: 7,
+                    progressive: true
                 },
                 files: [
                     {
@@ -40,25 +42,6 @@ module.exports = function (grunt) {
                         ext: '.jpg'
                     }
                 ]
-            }
-        },
-
-        responsive_images: {
-            thumbs: {
-                options: {
-                    sizes: [{
-                        width: 470,
-                        height: 246,
-                        aspectRatio: true,
-                    }]
-                },
-                files: [{
-                    expand: true,
-                    flatten: true,
-                    src: ['media/compressed/posts/thumbs/*.{jpg,gif,png}'],
-                    cwd: '',
-                    dest: 'media/compressed/thumbs/'
-                }]
             }
         },
 
@@ -137,7 +120,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["responsive_images", "newer:imagemin", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["newer:imagemin", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("build", ["imagemin", "responsive_images", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };
