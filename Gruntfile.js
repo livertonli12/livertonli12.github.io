@@ -4,6 +4,17 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        tinyimg: {
+          dynamic: {
+            files: [{
+              expand: true,
+              cwd: './images',
+              src: ['**/*.{png,jpg}'],
+              dest: 'media/compressed/'
+            }]
+          }
+        },
+
         imagemin: {
             png: {
                 options: {
@@ -90,7 +101,7 @@ module.exports = function (grunt) {
             },
             images: {
                 files: ["images/{,*/}{,*/}{,*/}*.{png,jpg}"],
-                tasks: ["newer:imagemin", "responsive_images", "shell:jekyllBuild", "copy"]
+                tasks: ["newer:imagemin", "shell:jekyllBuild", "copy"]
             }
         },
 
@@ -120,7 +131,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["newer:imagemin", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["newer:tinyimg", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("build", ["imagemin", "responsive_images", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };

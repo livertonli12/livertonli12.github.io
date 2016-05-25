@@ -17,6 +17,7 @@
     "grunt-responsive-images": "^0.1.6",
     "grunt-sass": "^1.1.0",
     "grunt-shell": "^1.1.1",
+    "grunt-tinyimg": "^1.0.0",
     "load-grunt-tasks": "^3.4.0"
   }
 }
