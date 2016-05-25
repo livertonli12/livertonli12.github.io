@@ -19,10 +19,10 @@ module.exports = function (grunt) {
           dynamic: {
             options: {
               pngquant: true,
-              optipng: false,
+              optipng: true,
               zopflipng: true,
               advpng: true,
-              jpegRecompress: false,
+              jpegRecompress: true,
               jpegoptim: true,
               mozjpeg: true,
               gifsicle: true,
@@ -153,7 +153,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["image", "shell:jekyllBuild", "copy", "open", "watch"]);
-    grunt.registerTask("build", ["imagemin", "responsive_images", "shell:jekyllBuild", "copy"]);
+    grunt.registerTask("default", ["tinyimg", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("build", ["image", "responsive_images", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };
