@@ -6,7 +6,7 @@ module.exports = function (grunt) {
 
         imagemin: {
             png: {
-                options: { optimizationLevel: 3, progressive: true },
+                options: { optimizationLevel: 1, progressive: true },
                 files: [
                     {
                         expand: true,
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
                 ]
             },
             jpg: {
-                options: { optimizationLevel: 3, progressive: true },
+                options: { optimizationLevel: 1, progressive: true },
                 files: [
                     {
                         expand: true,
