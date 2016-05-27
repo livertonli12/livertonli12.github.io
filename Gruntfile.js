@@ -144,7 +144,7 @@ module.exports = function (grunt) {
 
         shell: {
             jekyllServe: {
-                command: "jekyll serve --watch"
+                command: "jekyll serve --no-watch"
             },
             jekyllBuild: {
                 command: "jekyll build"

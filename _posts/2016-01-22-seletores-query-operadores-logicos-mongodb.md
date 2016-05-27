@@ -3,7 +3,6 @@ author: liverton
 comments: true
 layout: article
 title: Seletores de Query e Operadores Lógicos com MongoDB
-featimg: 2.jpg
 tags: [MongoDB]
 image:
   teaser: "media/compressed/posts/thumbs/2015-08-01.png"

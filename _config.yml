@@ -51,7 +51,7 @@ data:
   authors:
     liverton:
       name: "Líverton Oliveira"
-      bio: "Desenvolvedor de software e entusiasta de assuntos sobre criatividade"
+      bio: "Arquiteto de Soluções e entusiasta de criatividade"
       avatar: "media/compressed/bio-photo.jpg"
   navigation:
     - link:

@@ -236,22 +236,22 @@
   @include media($short) {
     background-size: cover;
     height: 3.9 * $masthead-height;
-    background-image:url('/media/compressed/banner2.jpg');
+    background-image:url('/media/compressed/banner1-jpg.jpg');
   }
   @include media($small) {
     background-size: cover;
     height: 5.9 * $masthead-height;
-    background-image:url('/media/compressed/banner2.jpg');
+    background-image:url('/media/compressed/banner1-jpg.jpg');
   }
   @include media($medium) {
     background-size: cover;
     height: 5.9 * $masthead-height;
-    background-image:url('/media/compressed/banner2.jpg');
+    background-image:url('/media/compressed/banner1-jpg.jpg');
   }
   @include media($large) {
     background-size: cover;
     height: 7 * $masthead-height;
-    background-image:url('/media/compressed/banner2.jpg');
+    background-image:url('/media/compressed/banner1-jpg.jpg');
   }
 
 
