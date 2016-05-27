@@ -18,15 +18,15 @@ module.exports = function (grunt) {
         image: {
           dynamic: {
             options: {
-              pngquant: true,
-              optipng: true,
-              zopflipng: true,
-              advpng: true,
-              jpegRecompress: true,
+              pngquant: false,
+              optipng: false,
+              zopflipng: false,
+              advpng: false,
+              jpegRecompress: false,
               jpegoptim: true,
-              mozjpeg: true,
-              gifsicle: true,
-              svgo: true
+              mozjpeg: false,
+              gifsicle: false,
+              svgo: false
             },
             files: [{
               expand: true,
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
         imagemin: {
             png: {
                 options: {
-                    optimizationLevel: 7,
+                    optimizationLevel: 3,
                     progressive: true
                 },
                 files: [
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
             },
             jpg: {
                 options: {
-                    optimizationLevel: 5,
+                    optimizationLevel: 3,
                     progressive: true
                 },
                 files: [
@@ -153,7 +153,7 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["tinyimg", "shell:jekyllBuild", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["imagemin", "shell:jekyllBuild", "copy", "open", "watch"]);
     grunt.registerTask("build", ["image", "responsive_images", "shell:jekyllBuild", "copy"]);
     grunt.registerTask("deploy", ["buildcontrol:pages"]);
 };
