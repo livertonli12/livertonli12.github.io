@@ -6,6 +6,7 @@ title: Primeiras consultas com MongoDB
 tags: [Consultas, MongoDB, Robomongo]
 image:
   teaser: "media/compressed/posts/thumbs/2015-07-21.jpg"
+  social: "media/compressed/posts/social/2015-07-21.jpg"
 ---
 
 Hoje veremos como efetuar consultas com o MongoDB. Para isto, utilizaremos a database Northwind importada no artigo anterior onde aprendemos [como importar documentos para o MongoDB]({{ site.baseurl | replace: '//', '/' }}/mongodb/como-importar-documentos-para-o-mongodb).
