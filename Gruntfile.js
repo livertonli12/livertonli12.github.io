@@ -4,21 +4,6 @@ module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        htmlmin: {
-          dist: {
-            options: {
-              removeComments: true,
-              collapseWhitespace: true
-            },
-            files: [{
-              expand: true,
-              cwd: '_site/',
-              src: ['**/*.html'],
-              dest: '_site/'
-            }]
-          }
-        },
-
         imagemin: {
             png: {
                 options: { optimizationLevel: 3, progressive: true },
@@ -108,5 +93,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["imagemin", "shell:jekyllBuild", "htmlmin", "copy", "open", "watch"]);
+    grunt.registerTask("default", ["imagemin", "shell:jekyllBuild", "copy", "open", "watch"]);
 };
