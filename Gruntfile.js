@@ -1,56 +1,32 @@
 module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
-    // Project configuration.
+
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        tinyimg: {
-          dynamic: {
-            files: [{
-              expand: true,
-              cwd: './images',
-              src: ['**/*.{png,jpg}'],
-              dest: 'media/compressed/'
-            }]
-          }
-        },
-
-        image: {
-          dynamic: {
+        htmlmin: {
+          dist: {
             options: {
-              pngquant: false,
-              optipng: false,
-              zopflipng: false,
-              advpng: false,
-              jpegRecompress: false,
-              jpegoptim: true,
-              mozjpeg: false,
-              gifsicle: false,
-              svgo: false
+              removeComments: true,
+              collapseWhitespace: true
             },
             files: [{
               expand: true,
-              cwd: './images',
-              src: ['**/*.{png,jpg,gif,svg}'],
-              dest: 'media/compressed/'
+              cwd: '_site/',
+              src: ['**/*.html'],
+              dest: '_site/'
             }]
           }
         },
 
         imagemin: {
             png: {
-                options: {
-                    optimizationLevel: 3,
-                    progressive: true
-                },
+                options: { optimizationLevel: 3, progressive: true },
                 files: [
                     {
-                        // Set to true to enable the following options…
                         expand: true,
-                        // cwd is 'current working directory'
                         cwd: './images',
                         src: ['**/*.png'],
-                        // Could also match cwd line above. i.e. project-directory/img/
                         dest: 'media/compressed/',
                         flatten: false,
                         ext: '.png'
@@ -58,18 +34,12 @@ module.exports = function (grunt) {
                 ]
             },
             jpg: {
-                options: {
-                    optimizationLevel: 3,
-                    progressive: true
-                },
+                options: { optimizationLevel: 3, progressive: true },
                 files: [
                     {
-                        // Set to true to enable the following options…
                         expand: true,
-                        // cwd is 'current working directory'
                         cwd: './images',
                         src: ['**/*.jpg', '**/*.jpeg'],
-                        // Could also match cwd. i.e. project-directory/img/
                         dest: 'media/compressed/',
                         flatten: false,
                         ext: '.jpg'
@@ -92,7 +62,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['js/build/**'],
+                        src: ['js/**'],
                         dest: 'jekyllbuild/'
                     },
                 ]
@@ -127,21 +97,6 @@ module.exports = function (grunt) {
             }
         },
 
-        buildcontrol: {
-            options: {
-                dir: 'jekyllbuild',
-                commit: true,
-                push: true,
-                message: 'Built jekyllbuild from commit %sourceCommit% on branch %sourceBranch%'
-            },
-            pages: {
-                options: {
-                    remote: 'git@github.com:DigitalMindCH/gridster-jekyll-theme.git', // change that
-                    branch: 'gh-pages' // adjust here
-                }
-            }
-        },
-
         shell: {
             jekyllServe: {
                 command: "jekyll serve --watch"
@@ -153,7 +108,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask("serve", ["shell:jekyllServe"]);
-    grunt.registerTask("default", ["imagemin", "shell:jekyllBuild", "copy", "open", "watch"]);
-    grunt.registerTask("build", ["image", "responsive_images", "shell:jekyllBuild", "copy"]);
-    grunt.registerTask("deploy", ["buildcontrol:pages"]);
+    grunt.registerTask("default", ["imagemin", "shell:jekyllBuild", "htmlmin", "copy", "open", "watch"]);
 };
