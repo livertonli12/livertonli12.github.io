@@ -5,7 +5,7 @@ layout: article
 title: Ordenando e limitando documentos com MongoDB
 tags: [Consultas, MongoDB]
 image:
-  teaser: "media/compressed/posts/thumbs/2015-08-17.png"
+  teaser: "media/compressed/posts/thumbs/2015-08-17.jpg"
 ---
 
 Neste artigo, utilizaremos os métodos de Sort e Limit do MongoDB.
