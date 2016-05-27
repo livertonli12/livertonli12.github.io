@@ -236,7 +236,7 @@
   @include media($short) {
     background-size: cover;
     height: 3.9 * $masthead-height;
-    background: url("/media/compressed/banner1-jpg.jpg") 82% 70%
+    background: url("/media/compressed/banner1-min.jpg");
   }
   @include media($small) {
     background-size: cover;
