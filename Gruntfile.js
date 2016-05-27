@@ -62,7 +62,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         expand: true,
-                        src: ['js/**'],
+                        src: ['js/build/**'],
                         dest: 'jekyllbuild/'
                     },
                 ]
